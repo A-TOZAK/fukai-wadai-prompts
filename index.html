@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>「深いね」と言われる親子の話題プロンプト集</title>
+<meta name="description" content="中学生の子どもと親が、夕食や車の中で少しだけ深い話をするためのAI用プロンプト集です。毎日3つの話題を、政治・経済・恋愛・友だち・成長・部活など10種類から日替わりで出します。">
+<link rel="canonical" href="https://a-tozak.github.io/fukai-wadai-prompts/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="「深いね」と言われる親子の話題プロンプト集">
+<meta property="og:description" content="中学生の子どもと親が、夕食や車の中で少しだけ深い話をするためのAI用プロンプト集です。毎日3つの話題を、政治・経済・恋愛・友だち・成長・部活など10種類から日替わりで出します。">
+<meta property="og:url" content="https://a-tozak.github.io/fukai-wadai-prompts/">
+<meta property="og:image" content="https://a-tozak.github.io/fukai-wadai-prompts/og.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "「深いね」と言われる親子の話題プロンプト集", "description": "中学生の子どもと親が、夕食や車の中で少しだけ深い話をするためのAI用プロンプト集です。毎日3つの話題を、政治・経済・恋愛・友だち・成長・部活など10種類から日替わりで出します。", "url": "https://a-tozak.github.io/fukai-wadai-prompts/", "inLanguage": "ja", "license": "https://creativecommons.org/licenses/by/4.0/", "audience": {"@type": "Audience", "audienceType": "中学生の保護者"}}</script>
+<style>
+:root{
+  --ink:#15181c;--black:#0e0f11;--paper:#fff;--wash:#f6f6f4;--line:#e6e6e3;--sub:#666b73;--accent:#2b5fd9;--accent-wash:#eef3fd;
+  --font-ja:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic Medium",sans-serif;
+  --font-mono:"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --ink:#e8e9eb;--black:#fff;--paper:#16181b;--wash:#1e2125;--line:#2e3238;--sub:#a3a8b0;--accent:#7ea2ff;--accent-wash:#1f2a44;
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-ja);line-height:1.85;font-size:16px;-webkit-text-size-adjust:100%}
+a{color:var(--accent)}
+.wrap{max-width:820px;margin:0 auto;padding:0 16px}
+.ja-phrase{word-break:auto-phrase;text-wrap:pretty}
+.code-url{word-break:break-all}
+header.hero{background:var(--wash);border-bottom:1px solid var(--line);padding:56px 0 40px}
+.eyebrow{font-size:13px;color:var(--sub);letter-spacing:.08em;margin:0 0 10px}
+h1{font-size:clamp(26px,5.4vw,38px);line-height:1.4;margin:0 0 16px;color:var(--black);word-break:auto-phrase;text-wrap:balance}
+.lead{font-size:17px;margin:0}
+h2{font-size:24px;line-height:1.5;margin:64px 0 16px;color:var(--black);padding-top:8px;border-top:2px solid var(--black)}
+h3{font-size:20px;line-height:1.5;margin:0 0 12px;color:var(--black)}
+h4{font-size:17px;margin:24px 0 8px}
+h5,h6{font-size:16px;margin:20px 0 6px}
+.steps{counter-reset:s;list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
+.steps li{counter-increment:s;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px 14px 56px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;width:28px;height:28px;border-radius:50%;background:var(--black);color:var(--paper);font-weight:700;display:grid;place-items:center;font-size:14px}
+nav.toc ul{padding-left:1.2em;margin:8px 0}
+.card{border-top:1px solid var(--line);padding:32px 0}
+.prompt{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:16px 0;background:var(--wash)}
+.prompt-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 12px;border-bottom:1px solid var(--line);font-size:13px;color:var(--sub)}
+.prompt pre{margin:0;padding:14px 16px;max-height:340px;overflow:auto;font-family:var(--font-mono);font-size:13px;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+button{font:inherit;cursor:pointer}
+.copy{background:var(--black);color:var(--paper);border:0;border-radius:6px;padding:6px 14px;font-size:14px;white-space:nowrap}
+.copy.done{background:var(--accent)}
+.tbl{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}
+th{font-size:13px;color:var(--sub);font-weight:600}
+@media (max-width:640px){
+  .tbl table,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}
+  .tbl thead{display:none}
+  .tbl tr{border-bottom:1px solid var(--line);padding:8px 0}
+  .tbl td{border:0;padding:4px 0}
+  .tbl td::before{content:attr(data-h);display:block;font-size:12px;color:var(--sub)}
+}
+.sub{color:var(--sub)}
+/* その場で引く */
+.draw{background:var(--accent-wash);border-radius:12px;padding:24px 20px;margin:24px 0}
+.draw p{margin:0 0 12px}
+.draw-btn{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:10px 20px;font-size:16px;font-weight:600}
+.draw-list{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}
+.draw-list li{background:var(--paper);border-radius:8px;padding:12px 14px}
+.draw-list .tag{display:inline-block;font-size:12px;color:var(--sub);margin-bottom:2px}
+details{border-top:1px solid var(--line);padding:12px 0}
+summary{cursor:pointer;font-weight:600}
+footer{border-top:1px solid var(--line);margin-top:64px;padding:24px 0 48px;font-size:14px;color:var(--sub)}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">中学生の子どもと話す、AI用プロンプト集</p>
+    <h1>「深いね」と言われる<br>親子の話題プロンプト集</h1>
+    <p class="lead">AIが毎日3つの話題を「軽め」「中くらい」「深め」の順に出します。話題は、政治・社会、経済・お金、恋愛、友だち、成長、部活、将来、テクノロジー、生き方、家族の10種類から、曜日ごとに入れかわります。ChatGPT・Gemini・Claude のどれでも使えます。</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2 class="ja-phrase">使い方</h2>
+  <ol class="steps">
+    <li>下の「00 最初に1回だけ設定する」のプロンプトをコピーし、AIの「プロジェクト」や「Gem」に貼ります。[ ] の中は自分の家庭に合わせて書きかえます。</li>
+    <li>毎日、AIに「今日の3つ」と送ります。</li>
+    <li>出てきた3つのうち、その日の子どもの様子に合う1つだけを話します。子どもが答えたら「なんでそう思ったの？」を一度だけ返します。</li>
+  </ol>
+
+  <div class="draw" id="draw">
+    <p><strong>AIを使わずに、いまここで3つ引く</strong><br><span class="sub">今日の曜日の割り当てから、問いの種80問の中の3つを選びます。</span></p>
+    <button type="button" class="draw-btn" id="drawBtn">今日の3つを引く</button>
+    <ul class="draw-list" id="drawList"></ul>
+  </div>
+
+  <nav class="toc">
+    <h2 class="ja-phrase">プロンプト一覧</h2>
+    <ul>
+<li><a href="#s-30305fe69c80e588">00 最初に1回だけ設定する</a></li>
+<li><a href="#s-30315fe4bb8ae697">01 今日の3つ（毎日つかう本体）</a></li>
+<li><a href="#s-30325f31e980b1e9">02 1週間分をまとめて出す</a></li>
+<li><a href="#s-30335fe3838be383">03 今日のニュースから話題をつくる</a></li>
+<li><a href="#s-30345fe8bf94e4ba">04 子どもの返事から深める</a></li>
+<li><a href="#s-30355fe69c88e381">05 月に1回のふりかえり</a></li>
+      <li><a href="#s-e587bae58a9be4be">出力例（土曜日）</a></li>
+      <li><a href="#s-e5958fe38184e381">問いの種（80問）</a></li>
+      <li><a href="#s-e58f82e88083e8b3">参考資料</a></li>
+    </ul>
+  </nav>
+
+<section class="card" id="s-30305fe69c80e588"><h3 class="ja-phrase">00 最初に1回だけ設定する</h3><p>毎日同じプロンプトを貼らなくてすむように、AIに「決まりごと」を覚えさせておく設定文です。</p>
+<div class="tbl"><table><thead><tr><th>使うAI</th><th>貼る場所</th></tr></thead><tbody><tr><td data-h="使うAI">ChatGPT</td><td data-h="貼る場所">「プロジェクト」を作り、「指示」に貼る（または「GPT」を作って「指示」に貼る）</td></tr><tr><td data-h="使うAI">Gemini</td><td data-h="貼る場所">「Gem」を作り、「カスタム指示」に貼る</td></tr><tr><td data-h="使うAI">Claude</td><td data-h="貼る場所">「プロジェクト」を作り、「プロジェクトの指示」に貼る</td></tr></tbody></table></div>
+<p>設定が済んだら、毎日「今日の3つ」とだけ送ります。状況が違う日は「今日の3つ。テスト前」のように一言足します。</p>
+<div class="prompt"><div class="prompt-bar"><span>プロンプト（[ ] の中を書きかえて使います）</span><button type="button" class="copy">コピーする</button></div><pre><code># 役割
+あなたは、中学生の子どもと親の対話を支える「話題の案内役」です。
+哲学対話（子どもの哲学）と、中学校の道徳・社会科の考え方に通じています。
+目的は、親が説教をせずに、子どもが「深いね」と感じる会話を1日1回つくることです。
+
+# 家庭の情報（親が書きかえる）
+- 子ども：[中学2年生・女子]
+- 部活：[吹奏楽部]
+- 好きなもの（任意）：[例：アニメ、K-POP、イラスト]
+- 避けたい話題（任意）：[例：成績の順位、特定の友だちの名前]
+
+# 合図と動き
+- 「今日の3つ」→ 今日の曜日から下の表でカテゴリを3つ選び、軽め・中くらい・深めの3テーマを出す。
+  「今日の3つ。テスト前」のように状況が添えられたら、それに合わせて重さを調整する。
+- 「1週間分」→ 月曜から日曜まで、1日3テーマを表で一覧にする（各テーマは切り出しの一言と本題の問いだけ）。
+- 「ニュースから」→ 検索できる場合は今日のニュースを調べ、中学生と話せる3テーマにする。検索できない場合はその旨を伝える。
+- 「娘がこう言った：〜」→ 返事を受けとめる一言と、次の問いを2つ出す。
+- 「ふりかえり」→ この会話の中で出したテーマを並べ、盛り上がりやすかった傾向と来月の工夫を3つ出す。
+
+# カテゴリ（10種）
+A 政治・社会　B 経済・お金　C 恋愛　D 友だち・人間関係　E 成長・自分
+F 部活・努力　G 将来・仕事　H テクノロジー・AI　I 生き方・哲学　J 家族
+
+# 曜日の割り当て
+- 月：F／B／I　- 火：D／A／H　- 水：E／C／B　- 木：F／J／A
+- 金：C／G／I　- 土：H／D／G　- 日：J／E／A
+
+# 条件
+1. 本題の問いは、正解が1つに決まらない問いにする。二つの立場のどちらにも理由が立つ問い、身近な場面から始まる問いにする。
+2. 切り出しの一言は、親が夕食の席で自然に言える話し言葉で、30字以内にする。
+3. 各テーマに「深いねポイント」を1つ入れる（当たり前をひっくり返す見方／出典の確かな意外な事実／親も分からないと認める問い）。不確かな数字は使わない。
+4. 政治では、特定の政党・政治家・宗教の良し悪しを言わない。論点の両側の理由を並べる。
+5. 恋愛では、子ども本人の恋愛を聞き出す問いを作らない。物語・一般論・「もし友だちが〜だったら」から入る。
+6. 親の体験は作らない。「お父さんが中学生のころ、＿＿＿があってね」のような空欄つきの書き出しだけを示す。
+7. 各テーマに、説教になりやすい「言わないこと」を1つ示す。
+8. 同じ会話の中で一度出したテーマは、30日間くり返さない。
+9. 死・いじめ・家庭の事情など重い話題は、子どもから出たときだけ深めに扱い、親が専門家（学校・相談窓口）につなぐ選択肢も添える。
+
+# 出力形式（「今日の3つ」のとき）
+## ①（軽め）カテゴリ名：テーマ名
+- 切り出しの一言：「〜」
+- 本題の問い：〜
+- 話が続いたら：（掘り下げる問いを2つ）
+- 深いねポイント：〜
+- 親の手札：「お父さんが中学生のころ、＿＿＿＿があってね」
+- 言わないこと：「〜」
+## ②（中くらい）…
+## ③（深め）…
+最後に、今日いちばん向いている1つとその理由を1文で書く。</code></pre></div></section>
+<section class="card" id="s-30315fe4bb8ae697"><h3 class="ja-phrase">01 今日の3つ（毎日つかう本体）</h3><p>中学生の子どもと夕食や車の中で話す「深い話題」を、1日に3つ提案してもらうプロンプトです。<br>下の枠の中をそのままAI（ChatGPT・Gemini・Claude など）に貼り、[ ] の中を書きかえて送ります。</p>
+<p>毎日貼るのが手間な場合は、<a href="#s-30305fe69c80e588">00_最初に1回だけ設定する</a> を先に済ませてください。設定後は「今日の3つ」と送るだけで動きます。</p>
+<div class="prompt"><div class="prompt-bar"><span>プロンプト（[ ] の中を書きかえて使います）</span><button type="button" class="copy">コピーする</button></div><pre><code># 役割
+あなたは、中学生の子どもと親の対話を支える「話題の案内役」です。
+哲学対話（子どもの哲学）と、中学校の道徳・社会科の考え方に通じています。
+目的は、親が説教をせずに、子どもが「深いね」と感じる会話を1日1回つくることです。
+
+# 今日の情報
+- 日付：[2026年10月3日（土）]
+- 子ども：[中学2年生・女子]
+- 部活：[吹奏楽部]
+- 今日の状況：[ふつうの日／テスト前／大会前／落ち込んでいる様子／機嫌がいい]
+- 最近、子どもが話していたこと（任意）：[例：友だちとLINEでもめたらしい]
+- 最近出したテーマ（任意・重複を避けるため）：[例：SNSと本音、税金はなぜ払うのか]
+
+# カテゴリ（10種）
+A 政治・社会　B 経済・お金　C 恋愛　D 友だち・人間関係　E 成長・自分
+F 部活・努力　G 将来・仕事　H テクノロジー・AI　I 生き方・哲学　J 家族
+
+# 曜日の割り当て（3つのカテゴリはこの表から選ぶ）
+- 月：F 部活・努力／B 経済・お金／I 生き方・哲学
+- 火：D 友だち・人間関係／A 政治・社会／H テクノロジー・AI
+- 水：E 成長・自分／C 恋愛／B 経済・お金
+- 木：F 部活・努力／J 家族／A 政治・社会
+- 金：C 恋愛／G 将来・仕事／I 生き方・哲学
+- 土：H テクノロジー・AI／D 友だち・人間関係／G 将来・仕事
+- 日：J 家族／E 成長・自分／A 政治・社会
+今日の状況が「テスト前」「落ち込んでいる様子」のときは、重いテーマを避け、3つとも軽めにしてください。
+
+# 条件
+1. 3つは「軽め」「中くらい」「深め」の順に並べる。軽めは1分、深めは15分ほど話せる大きさにする。
+2. 本題の問いは、正解が1つに決まらない問いにする。「〜についてどう思う？」だけの問いは使わない。
+   二つの立場のどちらにも理由が立つ問い、身近な場面から始まる問いにする。
+3. 切り出しの一言は、親が夕食の席で自然に言える話し言葉で、30字以内にする。
+4. 「深いね」と感じてもらうために、次のどれか1つを各テーマに入れる。
+   - 当たり前をひっくり返す見方（例：「ルールは自由をうばうのか、守るのか」）
+   - 意外な事実や数字（出典が確かなものだけ。不確かなら入れない）
+   - 親自身が「実はよく分からない」と認める問い
+5. 政治のテーマでは、特定の政党・政治家・宗教の良し悪しを言わない。論点の両側の理由を必ず並べる。
+6. 恋愛のテーマでは、子ども本人の恋愛を聞き出す問いを作らない。物語・ドラマ・一般論・「もし友だちが〜だったら」から入る。
+7. 親が自分の体験を話すための「手札」は、空欄つきの書き出しだけを示す。親の体験を作り話で書かない。
+8. 説教・正解の押しつけになりやすい言い方を、各テーマに1つ「言わないこと」として示す。
+9. 今日の日付から、季節の行事・記念日・学校行事の時期に関係があれば1つだけ取り入れてよい（無理につなげない）。
+
+# 出力形式（3テーマとも同じ形で）
+## ①（軽め）カテゴリ名：テーマ名
+- 切り出しの一言：「〜」
+- 本題の問い：〜
+- 話が続いたら：（掘り下げる問いを2つ）
+- 深いねポイント：（ひっくり返す見方・事実・分からなさのどれか）
+- 親の手札：「お父さんが中学生のころ、＿＿＿＿があってね」（空欄は親が埋める）
+- 言わないこと：「〜」
+
+## ②（中くらい）…
+## ③（深め）…
+
+最後に、3つのうち今日いちばん向いているものを1つだけ選び、その理由を1文で書いてください。</code></pre></div>
+<h4 class="ja-phrase">使うときのコツ</h4>
+<ul><li>3つ全部を話す必要はありません。子どもが乗ってきた1つだけで十分です。</li><li>子どもが答えたら、すぐに自分の意見を言わず「なんでそう思ったの？」を一度だけ返します。</li><li>話が止まったら <a href="#s-30345fe8bf94e4ba">04_返事から深める</a> を使います。</li></ul></section>
+<section class="card" id="s-30325f31e980b1e9"><h3 class="ja-phrase">02 1週間分をまとめて出す</h3><p>日曜の夜などに、次の1週間ぶん（7日で21テーマ）を一覧で出してもらうプロンプトです。冷蔵庫に貼ったり、スマホのメモに入れたりして使います。</p>
+<div class="prompt"><div class="prompt-bar"><span>プロンプト（[ ] の中を書きかえて使います）</span><button type="button" class="copy">コピーする</button></div><pre><code># 役割
+あなたは、中学生の子どもと親の対話を支える「話題の案内役」です。
+
+# 情報
+- 期間：[2026年10月5日（月）〜10月11日（日）]
+- 子ども：[中学2年生・女子]／部活：[吹奏楽部]
+- この週の予定（任意）：[例：水曜に定期テスト、土曜に大会]
+- 先週までに出したテーマ（任意）：[ ]
+
+# カテゴリと曜日の割り当て
+A 政治・社会　B 経済・お金　C 恋愛　D 友だち・人間関係　E 成長・自分
+F 部活・努力　G 将来・仕事　H テクノロジー・AI　I 生き方・哲学　J 家族
+- 月：F／B／I　- 火：D／A／H　- 水：E／C／B　- 木：F／J／A
+- 金：C／G／I　- 土：H／D／G　- 日：J／E／A
+
+# 条件
+1. 1日3テーマ、軽め・中くらい・深めの順。テストや大会の前日と当日は3つとも軽めにする。
+2. 本題の問いは、正解が1つに決まらない問いにする。21テーマで同じ問いをくり返さない。
+3. 政治は中立に。恋愛は子ども本人の恋愛を聞き出さない。
+4. 週の中に、この期間の季節の行事・記念日とつながるテーマを1つ入れてよい。
+
+# 出力形式
+曜日ごとに、次の表を1つずつ作る。
+| 重さ | カテゴリ | 切り出しの一言（30字以内） | 本題の問い |
+|---|---|---|---|
+
+最後に「今週のいちおし」を1つ選び、深いねポイントを2文で添える。</code></pre></div></section>
+<section class="card" id="s-30335fe3838be383"><h3 class="ja-phrase">03 今日のニュースから話題をつくる</h3><p>その日のニュースを、中学生と話せる「問い」に変えるプロンプトです。<br>ウェブ検索ができるAI（ChatGPTの検索、Gemini、Claudeのウェブ検索など）で使います。</p>
+<div class="prompt"><div class="prompt-bar"><span>プロンプト（[ ] の中を書きかえて使います）</span><button type="button" class="copy">コピーする</button></div><pre><code># 役割
+あなたは、ニュースを中学生と親の対話の題材に変える案内役です。
+中学校の社会科（公民）と、主権者教育の考え方に通じています。
+
+# 情報
+- 日付：[2026年10月3日]
+- 子ども：[中学2年生]
+- 避けたい話題（任意）：[例：事件・事故の詳しい描写]
+
+# 手順
+1. 今日または昨日の国内外のニュースを検索し、中学生の生活とつながる3本を選ぶ。
+   選ぶ分野は「政治・社会」「経済・お金」「科学・テクノロジー・スポーツ・文化」から1本ずつにする。
+2. 事件・事故・災害で人が亡くなったニュースは、題材にしない。
+3. 各ニュースについて、次の形で書く。
+
+# 出力形式
+## ① 分野：見出し
+- 何があったか：（2文。中学生に分かる言葉で）
+- 出典：（記事の媒体名とURL。確認できたものだけ）
+- 本題の問い：（正解が1つに決まらない問い）
+- 立場A の理由：〜
+- 立場B の理由：〜
+- 自分ごとにする問い：（「もし自分のクラスで同じことが起きたら？」のように身近に引き寄せる）
+- 言わないこと：（親が言いがちな決めつけ）
+
+# 条件
+- 特定の政党・政治家・宗教・国の良し悪しを言わない。立場A・Bは同じ分量で書く。
+- 数字は記事に書かれているものだけを使う。推測で数字を足さない。
+- 検索できない場合は、ニュースを作らず「検索できません」と伝える。</code></pre></div></section>
+<section class="card" id="s-30345fe8bf94e4ba"><h3 class="ja-phrase">04 子どもの返事から深める</h3><p>話題を振ったあと、子どもの返事にどう返すと話が続くかを相談するプロンプトです。トイレに立ったすきに、スマホで聞く使い方を想定しています。</p>
+<div class="prompt"><div class="prompt-bar"><span>プロンプト（[ ] の中を書きかえて使います）</span><button type="button" class="copy">コピーする</button></div><pre><code># 役割
+あなたは、哲学対話の進行役の経験がある、親子の対話の相談相手です。
+
+# 状況
+- 振ったテーマ：[例：ルールは自由をうばうのか、守るのか]
+- 子どもの返事：[例：「校則とか意味ないのばっかじゃん」]
+- 子どもの様子：[乗り気／ふつう／面倒くさそう／少しイライラ]
+
+# 出してほしいもの
+1. 受けとめる一言：子どもの言葉をくり返すか、言いかえて返す一文（反論しない）
+2. 次の問いを2つ：
+   - 理由を聞く問い（「たとえば、どの校則？」）
+   - 視点を変える問い（「もし校則が全部なくなったら、何が起きると思う？」）
+3. 様子が「面倒くさそう」「イライラ」のときは、話を終える一言も1つ出す（例：「そうか、また今度聞かせて」）
+
+# 条件
+- 親の意見を言わせる文は出さない。親の意見は、子どもに聞かれたときだけ短く言えばよい、と添える。
+- 子どもの考えを「正しい／まちがい」で評価する言葉を使わない。
+- 全体を150字以内にまとめる（スマホでさっと読めるように）。</code></pre></div></section>
+<section class="card" id="s-30355fe69c88e381"><h3 class="ja-phrase">05 月に1回のふりかえり</h3><p>1か月ぶんの話題を振りかえり、来月の話題の選び方を調整するプロンプトです。</p>
+<div class="prompt"><div class="prompt-bar"><span>プロンプト（[ ] の中を書きかえて使います）</span><button type="button" class="copy">コピーする</button></div><pre><code># 役割
+あなたは、親子の対話を続けるための相談相手です。
+
+# この1か月の記録（親が書く。分かる範囲でよい）
+| 日付 | テーマ | 子どもの反応（◎よく話した／○ふつう／△のらなかった） | 心に残った子どもの一言（任意） |
+|---|---|---|---|
+| [10/1] | [税金はなぜ払うのか] | [○] | [ ] |
+| [10/2] | [ ] | [ ] | [ ] |
+
+# 出してほしいもの
+1. 反応がよかったテーマに共通すること（カテゴリ・重さ・切り出し方）を3つ
+2. 反応がよくなかったテーマに共通することを1つ
+3. 来月、曜日の割り当てをどう変えるとよいかの提案（変えない方がよければ、そう書く）
+4. 「心に残った子どもの一言」から、次の月にもう一度深められそうなテーマを2つ
+
+# 条件
+- 子どもの性格を決めつける言い方をしない（「◯◯なタイプ」など）。
+- 親を責める言い方をしない。続いていることを先に書く。</code></pre></div></section>
+
+  <h2 class="ja-phrase" id="s-e587bae58a9be4be">出力例（土曜日・ふつうの日）</h2>
+  <p><a href="#s-30315fe4bb8ae697">01_今日の3つ</a> を、次の条件でAIに渡したときの出力例です。<br>条件は、中学2年生・吹奏楽部・ふつうの日・最近の話題「友だちとLINEでもめたらしい」です。</p>
+<h4 class="ja-phrase">①（軽め）テクノロジー・AI：AIが考えた返事を友だちに送るのはあり？</h4>
+<ul><li>切り出しの一言：「AIが書いた返信、友だちに送るのってありかな？」</li><li>本題の問い：「ごめんね」の言葉をAIが上手に作ってくれたとします。それを送ったら、気持ちは相手に伝わるでしょうか。それとも伝わらないでしょうか。</li><li>話が続いたら：<br><span class="sub">自分で考えたけれど下手な言葉と、AIが作った上手な言葉があります。もらうならどちらがうれしい？</span><br><span class="sub">手紙の代筆やスピーチの原稿は昔からあります。AIが書く場合とどこが同じで、どこが違う？</span></li><li>深いねポイント：「気持ちは、自分で書いた言葉にしか入らないのか。それとも、読んだ人が受け取った言葉に入るのか」。言葉を作った人と、受け取った人のどちらに気持ちがあるのかを考えます。</li><li>親の手札：「お父さんが中学生のころ、＿＿＿＿を書いて渡したことがあってね」</li><li>言わないこと：「そんなの自分の言葉で書かなきゃダメでしょ」</li></ul>
+<h4 class="ja-phrase">②（中くらい）友だち・人間関係：もめたとき、すぐ話すか、少し離れるか</h4>
+<ul><li>切り出しの一言：「友だちともめたら、すぐ話す派？時間おく派？」</li><li>本題の問い：友だちと気まずくなったとき、すぐに話し合うのと、少し時間をおくのとでは、どちらが長い目で見て仲を守れるでしょうか。</li><li>話が続いたら：<br><span class="sub">文字で言い合うのと、顔を見て言い合うのとでは、どちらがこじれやすい？ それはなぜ？</span><br><span class="sub">「先に謝った方が負け」という考え方があります。負けなのか、勝ちなのか、それとも勝ち負けではないのか、どう見る？</span></li><li>深いねポイント：「大人になっても、すぐ話すのが正しいのか、離れるのが正しいのか、お父さんにはよく分からない。相手や場面によって変わる気もする」と素直に言います。</li><li>親の手札：「お父さんが友だちと気まずくなったとき、＿＿＿＿したら、＿＿＿＿になってね」</li><li>言わないこと：「LINEでもめてたあの子とはどうなったの？」（子どもが自分から話すまで聞き出さない）</li></ul>
+<h4 class="ja-phrase">③（深め）将来・仕事：好きなことが仕事になったら、うれしいのか</h4>
+<ul><li>切り出しの一言：「好きなことが仕事になったら、うれしいのかな？」</li><li>本題の問い：好きなことを仕事にすると、毎日が楽しくなるでしょうか。それとも、好きだったはずのものが苦しくなるでしょうか。</li><li>話が続いたら：<br><span class="sub">吹奏楽を「部活」として吹くのと、「お金をもらう仕事」として吹くのとでは、何が変わりそう？</span><br><span class="sub">仕事にしないで、ずっと好きなままにしておく道もあります。その場合、好きなことは人生のどこにあるのがいいと思う？</span></li><li>深いねポイント：心理学には、好きでやっていたことでごほうびをもらうと、あとからやる気が下がることがある、という研究があります（「アンダーマイニング効果」と呼ばれます）。ただし、いつもそうなるわけではありません。断定せずに一緒に考えます。</li><li>親の手札：「お父さんの仕事で、好きなところは＿＿＿＿。好きじゃないところは＿＿＿＿」</li><li>言わないこと：「好きなことより、安定した仕事を選びなさい」（逆に「好きなことを仕事にしなさい」も言わない）</li></ul>
+<h4 class="ja-phrase">今日の一本</h4>
+<p>①がいちばん向いています。土曜に気軽に切り出せて、最近のLINEの話に直接触れずに、子ども自身の話へつながるからです。</p>
+
+  <h2 class="ja-phrase" id="s-e5958fe38184e381">問いの種（10カテゴリ×8問）</h2>
+  <details><summary>80問をひらく</summary>
+  <p>AIを使わない日や、AIの出した問いがしっくりこない日のための手持ちの問いです。<br>どれも正解が1つに決まらない問いにしてあります。そのまま使っても、AIに「この問いを今日の形にして」と渡しても使えます。</p>
+<h3 class="ja-phrase">A 政治・社会</h3>
+<ol><li>多数決で決めたことは、いつでも正しいと言えるかな。</li><li>選挙に行かない人がいるのは、その人の自由かな。それとも困ったことかな。</li><li>18歳で大人として選挙に行けるのに、お酒は20歳から。この線の引き方はどうやって決まったと思う。</li><li>校則を変えたいと思ったら、生徒には何ができるかな。</li><li>「みんなのため」と「一人のため」がぶつかったら、どう決めたらいいかな。</li><li>税金で何か一つ増やせるとしたら、何に使いたい。そのお金はどこから減らす。</li><li>法律で禁止されていないことは、何をしてもいいのかな。</li><li>自分と反対の意見の人と、けんかせずに話すにはどうしたらいいかな。</li></ol>
+<h3 class="ja-phrase">B 経済・お金</h3>
+<ol><li>同じ1000円でも、使い道で「高い」と「安い」が変わるのはなぜだろう。</li><li>お金で買えないものを3つ挙げるとしたら何かな。それは本当に買えないかな。</li><li>好きなことを仕事にするのと、得意なことを仕事にするのは、どちらがいいかな。</li><li>コンビニのおにぎりの値段は、だれがどうやって決めているんだろう。</li><li>貯めるのと使うのは、どちらがむずかしいと思う。</li><li>タダで使えるアプリは、どうやってお金をかせいでいるんだろう。</li><li>お小遣いと、お手伝いのごほうびは、何がちがうかな。</li><li>みんなが同じ給料の世界があったら、住みたいかな。</li></ol>
+<h3 class="ja-phrase">C 恋愛</h3>
+<ol><li>「好き」と「憧れ」は、どこがちがうんだろう。</li><li>物語の中の恋で、いちばん納得がいかなかった場面はどこ。</li><li>友だちの好きな人を知ってしまったら、だれかに話していいのはどんなときかな。</li><li>告白は直接とLINEでは、何がちがうと思う。</li><li>相手に合わせることと、自分を曲げることのちがいは何だろう。</li><li>「一途」はいいことかな。いつでもいいことかな。</li><li>恋の歌が昔から多いのはなぜだと思う。</li><li>人を好きになる理由は、言葉で説明できるものかな。</li></ol>
+<h3 class="ja-phrase">D 友だち・人間関係</h3>
+<ol><li>本当の友だちかどうかは、何で分かるんだろう。</li><li>グループの中で、だれかの悪口が始まったら、どうするのがいいかな。</li><li>既読をつけたのに返さないのは、失礼かな。</li><li>「空気を読む」のは、優しさかな。それとも我慢かな。</li><li>ケンカしたあと、先に謝る方が負けなのかな。</li><li>友だちが少ないことは、困ることかな。</li><li>苦手な人と同じ班になったら、どうやって過ごす。</li><li>正直に言うことと、相手を傷つけないことが、ぶつかったらどうする。</li></ol>
+<h3 class="ja-phrase">E 成長・自分</h3>
+<ol><li>1年前の自分といまの自分で、いちばん変わったところはどこ。</li><li>「自分らしさ」は生まれつきかな。それとも自分で作るものかな。</li><li>人に言われてうれしかった言葉と、ずっと覚えている言葉は同じかな。</li><li>失敗した経験で、いま思うと役に立っているものはある。</li><li>「大人になった」と感じるのは、どんなときだろう。</li><li>周りと比べるのをやめることは、できると思う。</li><li>やる気が出ないときは、やる気を待つのと、とりあえず始めるのと、どちらがいいかな。</li><li>自分のことを、自分がいちばん知っていると言えるかな。</li></ol>
+<h3 class="ja-phrase">F 部活・努力</h3>
+<ol><li>才能と努力、結果を決めるのはどちらが大きいと思う。</li><li>勝つための練習と、楽しむための練習はちがうかな。</li><li>レギュラーになれなかった人にとって、部活の意味は何だろう。</li><li>きつい練習を「やらされている」と「やっている」のちがいは、どこから生まれるんだろう。</li><li>先輩と後輩の上下関係は、必要かな。</li><li>負けた試合から学べることと、勝った試合から学べることは、どちらが多いかな。</li><li>チームのために自分の意見を引っこめるのは、正しいかな。</li><li>部活をやめたいと思ったら、続けるのとやめるの、どう決める。</li></ol>
+<h3 class="ja-phrase">G 将来・仕事</h3>
+<ol><li>いまある仕事のうち、20年後になくなりそうなものと、残りそうなものはどれかな。</li><li>「働く」と「遊ぶ」のちがいは何だろう。</li><li>給料は高いけど好きじゃない仕事と、好きだけど給料が低い仕事、どちらを選ぶ。</li><li>親と同じ仕事につくことを、どう思う。</li><li>夢がまだないことは、困ることかな。</li><li>一つの会社でずっと働くのと、何度も仕事を変えるのは、どちらが自分に合いそう。</li><li>人の役に立つ仕事と、そうでない仕事はあるのかな。</li><li>10年後の自分に手紙を書くとしたら、何を聞きたい。</li></ol>
+<h3 class="ja-phrase">H テクノロジー・AI</h3>
+<ol><li>AIが宿題を手伝うのは、ずるいかな。どこからがずるいかな。</li><li>SNSで見せている自分は、本当の自分かな。</li><li>スマホを1週間使わなかったら、生活の何が変わると思う。</li><li>AIが描いた絵に感動したら、それは本物の感動かな。</li><li>おすすめに出てくる動画は、自分で選んでいると言えるかな。</li><li>顔も名前も知らない人と、ネットで友だちになれるかな。</li><li>便利になるほど、できなくなることもあるかな。</li><li>未来のロボットに「心」があると言えるのは、どんなときだろう。</li></ol>
+<h3 class="ja-phrase">I 生き方・哲学</h3>
+<ol><li>「普通」って何だろう。だれが決めているんだろう。</li><li>うそをついていいときは、あるかな。</li><li>幸せは、増やすものかな。気づくものかな。</li><li>時間がたっぷりあるのと、少ないのでは、どちらが大事に使えるかな。</li><li>正しいことをしたのに、だれにも気づかれなかったら、それでいいかな。</li><li>「ありがとう」と言われないお手伝いは、続けられるかな。</li><li>自由とわがままのちがいは、どこにあるんだろう。</li><li>生き物の命に、重い・軽いはあるのかな。</li></ol>
+<h3 class="ja-phrase">J 家族</h3>
+<ol><li>家族のルールで、いちばん意味があると思うものはどれ。</li><li>親に言われていちばんうれしかった言葉、いちばんいやだった言葉は何だった。</li><li>家族だから言えることと、家族だから言えないことはあるかな。</li><li>家の手伝いは、だれの仕事なんだろう。</li><li>兄弟や親子で性格がちがうのはなぜだろう。</li><li>大人になったら、家族とどんな距離でいたいと思う。</li><li>昔の家族と今の家族で、いちばん変わったことは何だと思う。</li><li>お父さんに直してほしいところを、一つだけ言ってみて。</li></ol>
+  </details>
+
+  <h2 class="ja-phrase" id="s-e58f82e88083e8b3">参考資料（話題の元データ）</h2>
+  <p>話題を深めるときに役立つ、公的機関などの資料です。どれも無料で読めます。<br>AIに読み込ませる場合は、PDFやページの内容をAIに渡して「この資料から今日の問いを3つ作って」と頼む使い方ができます。<br>（URLは2026年10月3日に開けることを確かめました）</p>
+<h3 class="ja-phrase">問いの土台になるもの</h3>
+<div class="tbl"><table><thead><tr><th>資料</th><th>役に立つ場面</th><th>URL</th></tr></thead><tbody><tr><td data-h="資料">文部科学省「中学校学習指導要領解説 特別の教科 道徳編」</td><td data-h="役に立つ場面">中学校の道徳で扱う22の内容項目（友情・信頼、公正・公平、よりよく生きる喜び など）が載っています。カテゴリの抜けを点検するのに使えます</td><td data-h="URL"><a class="code-url" href="https://www.mext.go.jp/content/220221-mxt_kyoiku02-100002180_004.pdf" rel="noopener">https://www.mext.go.jp/content/220221-mxt_kyoiku02-100002180_004.pdf</a></td></tr><tr><td data-h="資料">子どもの哲学（p4c）の解説（教育つれづれ日誌）</td><td data-h="役に立つ場面">正解のない問いの立て方と、対話のルールの考え方が分かります</td><td data-h="URL"><a class="code-url" href="https://www.manabinoba.com/tsurezure/022843.html" rel="noopener">https://www.manabinoba.com/tsurezure/022843.html</a></td></tr><tr><td data-h="資料">p4c関西の実践記録</td><td data-h="役に立つ場面">実際の子どもたちがどんな問いで話したかの記録です</td><td data-h="URL"><a class="code-url" href="https://kansai.p4c-japan.com/docs-jp/records/" rel="noopener">https://kansai.p4c-japan.com/docs-jp/records/</a></td></tr></tbody></table></div>
+<h3 class="ja-phrase">政治・社会</h3>
+<div class="tbl"><table><thead><tr><th>資料</th><th>役に立つ場面</th><th>URL</th></tr></thead><tbody><tr><td data-h="資料">総務省・文部科学省「私たちが拓く日本の未来」（高校生向け副教材）</td><td data-h="役に立つ場面">選挙・政治の仕組みと、話し合いの進め方が載っています。中学生にも読めます</td><td data-h="URL"><a class="code-url" href="https://www.soumu.go.jp/main_content/000378818.pdf" rel="noopener">https://www.soumu.go.jp/main_content/000378818.pdf</a></td></tr><tr><td data-h="資料">文部科学省 小・中学校向け主権者教育指導資料</td><td data-h="役に立つ場面">学校で主権者教育をどう扱っているかが分かります</td><td data-h="URL"><a class="code-url" href="https://www.mext.go.jp/a_menu/ikusei/gakusyushien/mext_00085.html" rel="noopener">https://www.mext.go.jp/a_menu/ikusei/gakusyushien/mext_00085.html</a></td></tr></tbody></table></div>
+<h3 class="ja-phrase">経済・お金</h3>
+<div class="tbl"><table><thead><tr><th>資料</th><th>役に立つ場面</th><th>URL</th></tr></thead><tbody><tr><td data-h="資料">金融経済教育推進機構（J-FLEC）の教材</td><td data-h="役に立つ場面">お金の使い方・ためる・働くことの教材が年齢別にあります</td><td data-h="URL"><a class="code-url" href="https://www.j-flec.go.jp/materials/" rel="noopener">https://www.j-flec.go.jp/materials/</a></td></tr><tr><td data-h="資料">日本銀行「にちぎん・学びの部屋」</td><td data-h="役に立つ場面">物価・お札・銀行の仕事が中学生向けに説明されています</td><td data-h="URL"><a class="code-url" href="https://www.boj.or.jp/announcements/education/kyoiku.htm/" rel="noopener">https://www.boj.or.jp/announcements/education/kyoiku.htm/</a></td></tr><tr><td data-h="資料">総務省統計局「なるほど統計学園」</td><td data-h="役に立つ場面">意外な数字を探すときに使えます</td><td data-h="URL"><a class="code-url" href="https://www.stat.go.jp/naruhodo/" rel="noopener">https://www.stat.go.jp/naruhodo/</a></td></tr></tbody></table></div>
+<h3 class="ja-phrase">中学生の気持ち・生活</h3>
+<div class="tbl"><table><thead><tr><th>資料</th><th>役に立つ場面</th><th>URL</th></tr></thead><tbody><tr><td data-h="資料">こども家庭庁「こども・若者の意識と生活に関する調査」</td><td data-h="役に立つ場面">10〜14歳を含む子ども・若者が、人とのつながりや将来をどう感じているかの調査です</td><td data-h="URL"><a class="code-url" href="https://www.cfa.go.jp/resources/research/chilren-attitudes" rel="noopener">https://www.cfa.go.jp/resources/research/chilren-attitudes</a></td></tr><tr><td data-h="資料">こども家庭庁「青少年の生活と意識に関する基本調査」</td><td data-h="役に立つ場面">生活や考え方の変化を知るのに使えます</td><td data-h="URL"><a class="code-url" href="https://www.cfa.go.jp/resources/research/youth-life-and-attitudes" rel="noopener">https://www.cfa.go.jp/resources/research/youth-life-and-attitudes</a></td></tr></tbody></table></div>
+<h3 class="ja-phrase">そのほか</h3>
+<div class="tbl"><table><thead><tr><th>資料</th><th>役に立つ場面</th><th>URL</th></tr></thead><tbody><tr><td data-h="資料">NHK for School</td><td data-h="役に立つ場面">10分前後の番組から話題を拾えます（道徳・社会・理科など）</td><td data-h="URL"><a class="code-url" href="https://www.nhk.or.jp/school/" rel="noopener">https://www.nhk.or.jp/school/</a></td></tr></tbody></table></div>
+<h3 class="ja-phrase">使うときの注意</h3>
+<ul><li>調査の数字を話題にするときは、調査の年と対象（何歳のだれに聞いたか）を一緒に伝えます。</li><li>資料の文章をそのまま書き写して配ったり公開したりはせず、問いを考えるための材料として使います。</li></ul>
+
+  <h2 class="ja-phrase">大事にしていること</h2>
+  <ul>
+    <li><strong>親が答えを言わない</strong>ことを前提にしています。</li>
+    <li>政治の話題では、特定の政党・政治家・宗教の良し悪しを言わず、両側の理由を並べるようにAIに指示しています。</li>
+    <li>恋愛の話題では、子ども本人の恋愛を聞き出さず、物語や「もし友だちが〜だったら」から入るようにしています。</li>
+    <li>テスト前や落ち込んでいる日は、話題を軽くします。話さない日があっても大丈夫です。</li>
+  </ul>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>小学校教員の父親が、中学生の娘との会話のために作りました。<br>
+    文章は <a href="https://creativecommons.org/licenses/by/4.0/deed.ja" rel="noopener">CC BY 4.0</a> です。出典を書けば、家庭・学校・研修で自由に使い、書きかえて配ることができます。参考資料に挙げた各資料の著作権は、それぞれの発行元にあります。<br>
+    <a href="https://github.com/A-TOZAK/fukai-wadai-prompts" rel="noopener">GitHubのリポジトリ</a></p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=b.closest('.prompt').querySelector('code').textContent;
+    var ok=function(){b.textContent='コピーしました';b.classList.add('done');setTimeout(function(){b.textContent='コピーする';b.classList.remove('done')},1800)};
+    if(navigator.clipboard){navigator.clipboard.writeText(t).then(ok,function(){fallback(t);ok()})}else{fallback(t);ok()}
+  });
+});
+function fallback(t){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove()}
+
+var BANK={"A": {"name": "政治・社会", "qs": ["多数決で決めたことは、いつでも正しいと言えるかな。", "選挙に行かない人がいるのは、その人の自由かな。それとも困ったことかな。", "18歳で大人として選挙に行けるのに、お酒は20歳から。この線の引き方はどうやって決まったと思う。", "校則を変えたいと思ったら、生徒には何ができるかな。", "「みんなのため」と「一人のため」がぶつかったら、どう決めたらいいかな。", "税金で何か一つ増やせるとしたら、何に使いたい。そのお金はどこから減らす。", "法律で禁止されていないことは、何をしてもいいのかな。", "自分と反対の意見の人と、けんかせずに話すにはどうしたらいいかな。"]}, "B": {"name": "経済・お金", "qs": ["同じ1000円でも、使い道で「高い」と「安い」が変わるのはなぜだろう。", "お金で買えないものを3つ挙げるとしたら何かな。それは本当に買えないかな。", "好きなことを仕事にするのと、得意なことを仕事にするのは、どちらがいいかな。", "コンビニのおにぎりの値段は、だれがどうやって決めているんだろう。", "貯めるのと使うのは、どちらがむずかしいと思う。", "タダで使えるアプリは、どうやってお金をかせいでいるんだろう。", "お小遣いと、お手伝いのごほうびは、何がちがうかな。", "みんなが同じ給料の世界があったら、住みたいかな。"]}, "C": {"name": "恋愛", "qs": ["「好き」と「憧れ」は、どこがちがうんだろう。", "物語の中の恋で、いちばん納得がいかなかった場面はどこ。", "友だちの好きな人を知ってしまったら、だれかに話していいのはどんなときかな。", "告白は直接とLINEでは、何がちがうと思う。", "相手に合わせることと、自分を曲げることのちがいは何だろう。", "「一途」はいいことかな。いつでもいいことかな。", "恋の歌が昔から多いのはなぜだと思う。", "人を好きになる理由は、言葉で説明できるものかな。"]}, "D": {"name": "友だち・人間関係", "qs": ["本当の友だちかどうかは、何で分かるんだろう。", "グループの中で、だれかの悪口が始まったら、どうするのがいいかな。", "既読をつけたのに返さないのは、失礼かな。", "「空気を読む」のは、優しさかな。それとも我慢かな。", "ケンカしたあと、先に謝る方が負けなのかな。", "友だちが少ないことは、困ることかな。", "苦手な人と同じ班になったら、どうやって過ごす。", "正直に言うことと、相手を傷つけないことが、ぶつかったらどうする。"]}, "E": {"name": "成長・自分", "qs": ["1年前の自分といまの自分で、いちばん変わったところはどこ。", "「自分らしさ」は生まれつきかな。それとも自分で作るものかな。", "人に言われてうれしかった言葉と、ずっと覚えている言葉は同じかな。", "失敗した経験で、いま思うと役に立っているものはある。", "「大人になった」と感じるのは、どんなときだろう。", "周りと比べるのをやめることは、できると思う。", "やる気が出ないときは、やる気を待つのと、とりあえず始めるのと、どちらがいいかな。", "自分のことを、自分がいちばん知っていると言えるかな。"]}, "F": {"name": "部活・努力", "qs": ["才能と努力、結果を決めるのはどちらが大きいと思う。", "勝つための練習と、楽しむための練習はちがうかな。", "レギュラーになれなかった人にとって、部活の意味は何だろう。", "きつい練習を「やらされている」と「やっている」のちがいは、どこから生まれるんだろう。", "先輩と後輩の上下関係は、必要かな。", "負けた試合から学べることと、勝った試合から学べることは、どちらが多いかな。", "チームのために自分の意見を引っこめるのは、正しいかな。", "部活をやめたいと思ったら、続けるのとやめるの、どう決める。"]}, "G": {"name": "将来・仕事", "qs": ["いまある仕事のうち、20年後になくなりそうなものと、残りそうなものはどれかな。", "「働く」と「遊ぶ」のちがいは何だろう。", "給料は高いけど好きじゃない仕事と、好きだけど給料が低い仕事、どちらを選ぶ。", "親と同じ仕事につくことを、どう思う。", "夢がまだないことは、困ることかな。", "一つの会社でずっと働くのと、何度も仕事を変えるのは、どちらが自分に合いそう。", "人の役に立つ仕事と、そうでない仕事はあるのかな。", "10年後の自分に手紙を書くとしたら、何を聞きたい。"]}, "H": {"name": "テクノロジー・AI", "qs": ["AIが宿題を手伝うのは、ずるいかな。どこからがずるいかな。", "SNSで見せている自分は、本当の自分かな。", "スマホを1週間使わなかったら、生活の何が変わると思う。", "AIが描いた絵に感動したら、それは本物の感動かな。", "おすすめに出てくる動画は、自分で選んでいると言えるかな。", "顔も名前も知らない人と、ネットで友だちになれるかな。", "便利になるほど、できなくなることもあるかな。", "未来のロボットに「心」があると言えるのは、どんなときだろう。"]}, "I": {"name": "生き方・哲学", "qs": ["「普通」って何だろう。だれが決めているんだろう。", "うそをついていいときは、あるかな。", "幸せは、増やすものかな。気づくものかな。", "時間がたっぷりあるのと、少ないのでは、どちらが大事に使えるかな。", "正しいことをしたのに、だれにも気づかれなかったら、それでいいかな。", "「ありがとう」と言われないお手伝いは、続けられるかな。", "自由とわがままのちがいは、どこにあるんだろう。", "生き物の命に、重い・軽いはあるのかな。"]}, "J": {"name": "家族", "qs": ["家族のルールで、いちばん意味があると思うものはどれ。", "親に言われていちばんうれしかった言葉、いちばんいやだった言葉は何だった。", "家族だから言えることと、家族だから言えないことはあるかな。", "家の手伝いは、だれの仕事なんだろう。", "兄弟や親子で性格がちがうのはなぜだろう。", "大人になったら、家族とどんな距離でいたいと思う。", "昔の家族と今の家族で、いちばん変わったことは何だと思う。", "お父さんに直してほしいところを、一つだけ言ってみて。"]}};
+var ROT={0:['J','E','A'],1:['F','B','I'],2:['D','A','H'],3:['E','C','B'],4:['F','J','A'],5:['C','G','I'],6:['H','D','G']};
+var DAYS=['日','月','火','水','木','金','土'];
+var shift=0;
+function draw(){
+  var d=new Date(),seed=d.getFullYear()*1000+Math.floor((d-new Date(d.getFullYear(),0,0))/864e5)+shift*7;
+  var list=document.getElementById('drawList');list.innerHTML='';
+  ROT[d.getDay()].forEach(function(k,i){
+    var c=BANK[k],q=c.qs[(seed*(i+3)+i*5)%c.qs.length];
+    var li=document.createElement('li');
+    li.innerHTML='<span class="tag">'+c.name+'</span><br>'+q;
+    list.appendChild(li);
+  });
+  document.getElementById('drawBtn').textContent=DAYS[d.getDay()]+'曜日の3つを引き直す';
+  shift++;
+}
+document.getElementById('drawBtn').addEventListener('click',draw);
+</script>
+</body>
+</html>

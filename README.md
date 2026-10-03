@@ -52,3 +52,9 @@ AIを使わない日のために、[問いの種（80問）](data/問いの種.m
 
 [CC BY 4.0](LICENSE) です。出典を書けば、家庭・学校・研修で自由に使い、書きかえて配ることができます。
 参考資料に挙げた各資料の著作権は、それぞれの発行元にあります。
+
+## Webページ
+
+https://a-tozak.github.io/fukai-wadai-prompts/
+
+プロンプトをボタン1つでコピーできます。md を直したら `python3 build.py` で index.html を作り直してから push します。
